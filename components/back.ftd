@@ -15,23 +15,14 @@ optional string company-slogan:
 -- ftd.column:
 width: fill-container
 height: fill-container
-background.solid: #EF8435
-spacing: space-around
-align-content: center
-
--- ftd.column:
-width: fill-container
-height: fill-container
-align-content: center
+align-content: bottom-left
 background.image: $bg-image
 
 -- ftd.column:
-anchor: parent
-bottom.px: 0
-left.px: 0
-z-index: 999
-padding.px: 44
 background.solid: #FFFFFF
+padding.px: 44
+align-content: center
+role: $inherited.types.copy-small
 
 -- ftd.image: $back.logo
 if: { back.logo != NULL }
@@ -44,9 +35,6 @@ margin-top.px: 8
 if: { back.company-slogan != NULL }
 margin-top.px: 16
 
-
--- end: ftd.column
-
 -- end: ftd.column
 
 -- end: ftd.column
@@ -56,10 +44,13 @@ margin-top.px: 16
 
 
 
+
+
+
+
 -- ftd.background-image bg-image:
 src: $assets.files.assets.bg-back.svg
 repeat: no-repeat
 position: center
-
 
 

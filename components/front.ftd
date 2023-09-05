@@ -19,9 +19,11 @@ align-content: center
 role: $lib.poppins-font
 color: #3A5485
 
+
 -- ftd.text: $front.title
 role: $inherited.types.copy-regular
 color: #3A5485
+margin-bottom.px: 24
 
 -- image-and-info:
 image: $assets.files.assets.email-icon.png
@@ -39,7 +41,6 @@ info-1: $front.address
 
 -- end: ftd.column
 
-
 -- end: front
 
 
@@ -54,7 +55,6 @@ ftd.image-src image:
 optional string info-1:
 optional string info-2:
 
-
 -- ftd.row:
 if: { image-and-info.info-1 != NULL || image-and-info.info-2 != NULL }
 spacing.fixed.px: 10
@@ -67,13 +67,14 @@ width.fixed.px: 35
 -- ftd.column:
 width: fill-container
 color: #5D6481
-role: $inherited.types.fine-print
+role: $inherited.types.copy-small
 
 -- ftd.text: $image-and-info.info-1
 if: { image-and-info.info-1 != NULL }
 
 -- ftd.text: $image-and-info.info-2
 if: { image-and-info.info-2 != NULL }
+margin-top.px: 4
 
 -- end: ftd.column
 
