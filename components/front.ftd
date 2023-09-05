@@ -26,17 +26,17 @@ color: #3A5485
 margin-bottom.px: 24
 
 -- image-and-info:
-image: $assets.files.assets.email-icon.png
+image: $assets.files.assets.email-icon.svg
 info-1: $front.email
 info-2: $front.website
 
 -- image-and-info:
-image: $assets.files.assets.phone-icon.png
+image: $assets.files.assets.phone-icon.svg
 info-1: $front.contact-1
 info-2: $front.contact-2
 
 -- image-and-info:
-image: $assets.files.assets.gps-icon.png
+image: $assets.files.assets.gps-icon.svg
 info-1: $front.address
 
 -- end: ftd.column
@@ -62,7 +62,9 @@ margin-bottom.px: 10
 
 -- ftd.image:
 src: $image-and-info.image
-width.fixed.px: 35
+width.fixed.px: 16
+height.fixed.px: 16
+align-self: center
 
 -- ftd.column:
 width: fill-container
@@ -74,7 +76,6 @@ if: { image-and-info.info-1 != NULL }
 
 -- ftd.text: $image-and-info.info-2
 if: { image-and-info.info-2 != NULL }
-margin-top.px: 4
 
 -- end: ftd.column
 
