@@ -62,8 +62,8 @@ margin-bottom.px: 10
 
 -- ftd.image:
 src: $image-and-info.image
-width.fixed.px: 16
-height.fixed.px: 16
+width.fixed.px: 32
+height.fixed.px: 32
 align-self: center
 
 -- ftd.column:
