@@ -25,7 +25,6 @@ align-content: center
 role: $inherited.types.copy-small
 
 -- ftd.image: $back.logo
-if: { back.logo != NULL }
 max-width.fixed.px: 250
 
 -- ftd.text: $back.company-name
